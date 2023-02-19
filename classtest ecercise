@@ -1,0 +1,21 @@
+public class Room {
+    int roomno;
+    String roomtype;
+    float roomarea;
+    boolean ACmachine;
+    
+    public Room(){
+        System.out.println("Hello");
+    }
+    public Room(int roomno,String roomtype,float roomarea,boolean ACmachine){
+        int room=this.roomno;
+        String roomtyp= this.roomtype;
+        boolean ACmache=this.ACmachine;
+        float romarea=this.roomarea;
+    }
+    public void displaymethod{
+        System.out.println(roomno);
+        System.out.println(roomtype);
+        System.out.println(roomarea);
+        System.out.println(ACmachine);
+    }}

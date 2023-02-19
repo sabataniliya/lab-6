@@ -1,21 +1,44 @@
-public class Room {
-    int roomno;
-    String roomtype;
-    float roomarea;
-    boolean ACmachine;
-    
-    public Room(){
-        System.out.println("Hello");
+public class Classroom {
+    private int romno;
+    private String roomType;
+    private float roomArea;
+    private boolean acmachi;
+
+    public Classroom(int romno, String roomType, float roomArea, boolean acmachi) {
+        this.romno = romno;
+        this.roomType = roomType;
+        this.roomArea = roomArea;
+        this.acmachi = acmachi;
     }
-    public Room(int roomno,String roomtype,float roomarea,boolean ACmachine){
-        int room=this.roomno;
-        String roomtyp= this.roomtype;
-        boolean ACmache=this.ACmachine;
-        float romarea=this.roomarea;
+
+    public Classroom() {
+        // default constructor
     }
-    public void displaymethod{
-        System.out.println(roomno);
-        System.out.println(roomtype);
-        System.out.println(roomarea);
-        System.out.println(ACmachine);
-    }}
+
+    public void setRoomNo(int romno) {
+        this.romno = romno;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
+    }
+
+    public void setRoomArea(float roomArea) {
+        this.roomArea = roomArea;
+    }
+
+    public void setACMachine(boolean acmachi) {
+        this.acmachi = acmachi;
+    }
+
+    public void displayHello() {
+        System.out.println("Hello, welcome to room number " + romno);
+    }
+
+    public void displayData() {
+        System.out.println("Room Number: " + romno);
+        System.out.println("Room Type: " + roomType);
+        System.out.println("Room Area: " + roomArea);
+        System.out.println("AC Machine Installed: " + (acmachi ? "Yes" : "No"));
+    }
+}
